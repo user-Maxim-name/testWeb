@@ -36,9 +36,12 @@ ul li {
 
 input,
 select {
-    background: linear-gradient(180deg, #ffffff 0%, #f4f3f1 100%)
+    background: linear-gradient(180deg, #ffffff 0%, #f4f3f1 100%);
+    
 }
-
+.custome_icon_select select:hover{
+color: #231f20;
+}
 body {
     background: url(images/background_main.jpg);
 }
@@ -468,9 +471,7 @@ form {
     min-height: 26px;
 }
 
-.custome_icon_select:nth-of-type(1) select {
-    color: #231f20;
-}
+ 
 
 .contnt .custome_icon_select:nth-child(n+1)::after {
     width: 20px;
