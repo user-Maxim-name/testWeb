@@ -29,6 +29,9 @@ input,
 select {
     background: linear-gradient(180deg, #ffffff 0%, #f4f3f1 100%);
 }
+.rs_first_part .custome_icon_select select:hover{
+    color:black;
+}
 button {
     cursor: pointer;
 }
