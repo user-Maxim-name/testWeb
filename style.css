@@ -107,6 +107,7 @@ body {
     padding-bottom: 10px;
     padding-top: 4px;
     background: linear-gradient(rgb(99, 192, 59) 0%, rgb(21, 151, 60) 100%);
+    position: relative;
 }
 .nav_menu li {
     text-align: center;
@@ -710,10 +711,31 @@ form {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+.fa-bars{
+    position: absolute;
+    left: 10px;
+     top: 12px;
+    color: white;
+}
 
-
-
-
+.nav_menu ul {
+    display: none;
+}
+ .nav_menu:hover ul{
+    display: block;
+ 
+}
+.nav_menu:hover::before  {
+content: '\1f7a9';
+display: block;
+position: absolute;
+left: 10px;
+top: 0px;
+font-size: 28px;
+}
+.nav_menu:hover .fa-bars {
+    display: none;
+}
 
 
 
@@ -855,8 +877,17 @@ form {
     }
     .describe_after_slider div:nth-child(1) {
         max-width: 420px;
-    }
-}
+        }
+        
+        .nav_menu {
+            display: flex;
+        }
+        
+        i.fa-bars,
+        i.fa-solid {
+            display: none;
+        }
+        }
 @media (min-width:673px) {
     .chapters_nav {
         display: flex;
